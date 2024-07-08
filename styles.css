@@ -58,8 +58,9 @@ main {
 }
 
 .product img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 200px; /* Altura fixa para todas as imagens */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço definido */
     border-radius: 10px;
 }
 
@@ -138,5 +139,10 @@ footer {
 
     #logo {
         width: 15%;
+    }
+
+    .product-grid {
+        display: flex;
+        flex-direction: column;
     }
 }
